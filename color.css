@@ -162,3 +162,61 @@ body {
 .detail li {
   margin: 10px 0;
 }
+
+/* ADAPTACIÓN PARA CELULAR */
+@media (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .banner h1 {
+    font-size: 36px;
+  }
+
+  .banner img {
+    position: static;
+    margin-top: 10px;
+    height: 80px;
+  }
+
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-radius: 0;
+    margin-bottom: 20px;
+  }
+
+  .main-content {
+    padding: 10px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .categorias {
+    text-align: center;
+  }
+
+  .categorias button {
+    margin: 5px;
+    width: 100%;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
