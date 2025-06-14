@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Banner superior */
+.banner {
+  background-color: #2C3E50;
+  position: relative;
+  padding: 0 40px;
+  border-radius: 12px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner h1 {
+  text-align: center;
+  font-size: 70px;
+  color: white;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(245, 240, 240, 0.5);
+}
+
+.banner img {
+  position: absolute;
+  right: 40px;
+  top: 10px;
+  height: 100px;
+  object-fit: contain;
+}
+
+/* Layout principal */
+.container {
+  display: flex;
+  height: 550vh;
+}
+
+/* Barra lateral */
+.sidebar {
+  width: 200px;
+  border-radius: 12px;
+  background-color: #9BA4B4;
+  text-align: center;
+  padding: 20px;
+}
+
+.sidebar .logo {
+  margin-bottom: 30px;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(252, 252, 252, 0.5);
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 15px 0;
+  cursor: pointer;
+}
+
+/* ESTILO NUEVO PARA LOS LINKS EN LA SIDEBAR */
+.sidebar ul li a {
+  text-decoration: none;      /* Quita subrayado */
+  color: white;               /* Color blanco para texto */
+  font-weight: 600;
+  font-size: 18px;
+  display: block;             /* Ocupa toda la línea */
+  padding: 8px 0;             /* Espacio vertical para click */
+  transition: color 0.3s;
+}
+
+.sidebar ul li a:hover {
+  color: #2C3E50;            /* Azul marino para hover */
+  cursor: pointer;
+}
+
+/* Contenido principal */
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.search {
+  width: 60%;
+  padding: 8px;
+}
+
+/* Categorías */
+.categorias {
+  margin-bottom: 20px;
+}
+
+.categorias button {
+  margin-right: 10px;
+  padding: 6px 12px;
+}
+
+/* Tarjetas de recetas */
+.Receta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* espacio entre tarjetas */
+  justify-content: center;
+}
+
+.card {
+  background: #c6c31b33;
+  padding: 10px;
+  border-radius: 10px;
+  width: 400px; /* tamaño de cada tarjeta */
+  box-shadow: 0 0 5px #7f8c8d;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.card h4 {
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+
+.card ul {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding-left: 40px;
+  text-align: left;
+}
+
+/* Panel lateral derecho (si querés agregar más detalles) */
+.detail {
+  width: 250px;
+  background: #ffffff;
+  padding: 20px;
+}
+
+.detail ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.detail li {
+  margin: 10px 0;
+}
