@@ -162,7 +162,7 @@ body {
   margin-bottom: 5px;
 }
 
-.card ul {
+.card ol {
   margin-top: 5px;
   margin-bottom: 10px;
   padding-left: 40px;
@@ -184,6 +184,8 @@ body {
 .detail li {
   margin: 10px 0;
 }
+
+/*---------------------------------------------------------------------------------*/
 
 /* ADAPTACIÓN PARA CELULAR */
 @media (max-width: 768px) {
