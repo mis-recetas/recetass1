@@ -8,14 +8,18 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* Banner superior */
+/* barra del titulo  */
 .banner {
-  background-color: #2C3E50;
   position: relative;
-  padding: 0 40px;
+  height: 200px;
+  background-image: url("img/titulo.jpeg");
+  background-size: cover;
+  background-position: center;
   border-radius: 12px;
-  height: 120px;
   display: flex;
+  flex-direction: column; /* esta línea */
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(40, 100, 184, 0.6);
   align-items: center;
   justify-content: center;
 }
@@ -23,30 +27,22 @@ body {
 .banner h1 {
   text-align: center;
   font-size: 70px;
-  color: white;
+  color: rgb(245, 243, 243);
   margin: 0;
-  text-shadow: 2px 2px 4px rgba(245, 240, 240, 0.5);
-}
-
-.banner img {
-  position: absolute;
-  right: 40px;
-  top: 10px;
-  height: 100px;
-  object-fit: contain;
+  text-shadow: 2px 2px 4px rgba(40, 100, 184, 0.6);
 }
 
 /* Layout principal */
 .container {
   display: flex;
-  height: 550vh;
+  min-height: calc(100vh - 200px - 60px);
 }
 
 /* Barra lateral */
 .sidebar {
   width: 200px;
   border-radius: 12px;
-  background-color: #9BA4B4;
+  background-color: #2c3e50;
   text-align: center;
   padding: 20px;
 }
@@ -68,19 +64,36 @@ body {
   cursor: pointer;
 }
 
+/* barra del final */
+
+.barra-final {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  /* quitar margin-top: 40px; */
+}
+
+
+
+
 /* ESTILO NUEVO PARA LOS LINKS EN LA SIDEBAR */
 .sidebar ul li a {
-  text-decoration: none;      /* Quita subrayado */
-  color: white;               /* Color blanco para texto */
+  text-decoration: none; /* Quita subrayado */
+  color: white; /* Color blanco para texto */
   font-weight: 600;
   font-size: 18px;
-  display: block;             /* Ocupa toda la línea */
-  padding: 8px 0;             /* Espacio vertical para click */
+  display: block; /* Ocupa toda la línea */
+  padding: 8px 0; /* Espacio vertical para click */
   transition: color 0.3s;
 }
 
 .sidebar ul li a:hover {
-  color: #2C3E50;            /* Azul marino para hover */
+  color: #655f5f; /* Azul marino para hover */
   cursor: pointer;
 }
 
@@ -94,21 +107,30 @@ body {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+  width: 100%;
+  justify-content: center;
 }
 
 .search {
-  width: 60%;
-  padding: 8px;
+  width: 50%;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
 }
 
 /* Categorías */
 .categorias {
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .categorias button {
   margin-right: 10px;
   padding: 6px 12px;
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  border-color: #0baca6;
+  background-color: #2c3e50;
 }
 
 /* Tarjetas de recetas */
@@ -166,17 +188,57 @@ body {
 /* ADAPTACIÓN PARA CELULAR */
 @media (max-width: 768px) {
   .banner {
-    padding: 10px 20px;
-    height: auto; /* para que se ajuste si hace falta */
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    text-align: center;
   }
 
   .banner h1 {
-    font-size: 32px; /* más chico en celular */
+    font-size: 36px;
   }
 
   .banner img {
-    height: 60px;  /* más chica la imagen */
-    top: 15px;
-    right: 20px;
+    position: static;
+    margin-top: 10px;
+    height: 80px;
+  }
+
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-radius: 0;
+    margin-bottom: 20px;
+  }
+
+  .main-content {
+    padding: 10px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .categorias {
+    text-align: center;
+  }
+
+  .categorias button {
+    margin: 5px;
+    width: 100%;
+  }
+
+  .card {
+    width: 90%;
   }
 }
