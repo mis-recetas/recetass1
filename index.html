@@ -46,14 +46,18 @@
 
             </header>
 
-
-
-            <!-- CATEGORÍAS -->
+          
+            <!-- CATEGORÍAS DEL MENU DE LOS BOTONES -->
             <div class="categorias">
-                <button onclick="filtrarCategorias('todos')">🍽️Todos</button>
-                <button onclick="filtrarCategorias('desayuno')">🍳Desayuno</button>
-                <button onclick="filtrarCategorias('almuerzo')">🥗Almuerzo</button>
-                <button onclick="filtrarCategorias('cena')">🍝Cena</button>
+                <button class="btn-todos" onclick="filtrarCategorias('todos')">TODOS</button>
+                <button class="btn-desayuno" onclick="filtrarCategorias('desayuno')">DESAYUNO</button>
+                <button class="btn-almuerzo" onclick="filtrarCategorias('almuerzo')">ALMUERZO</button>
+                <button class="btn-cena" onclick="filtrarCategorias('cena')">CENA</button>
+                <button class="btn-vegetariano" onclick="filtrarCategorias('vegetariano')">VEGETARIANO</button>
+                <button class="btn-postre" onclick="filtrarCategorias('postre')">POSTRE</button>
+                <button class="btn-merienda" onclick="filtrarCategorias('merienda')">MERIENDA</button>
+                <button class="btn-tragos" onclick="filtrarCategorias('tragos')">TRAGOS</button>
+
             </div>
 
 
@@ -76,7 +80,8 @@
                         <li>Esencia de vainilla</li>
                     </ol>
                 </div>
-                
+
+
                 <div class="card" data-categoria="desayuno">
                     <img src="img/panqueques.jpg" alt="Panqueques" />
                     <h3>Panqueques Dulces</h3>
