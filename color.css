@@ -15,7 +15,6 @@ body {
   background-image: url("img/titulo.jpeg");
   background-size: cover;
   background-position: center;
-  border-radius: 12px;
   display: flex;
   flex-direction: column; /* esta línea */
   color: #ffffff;
@@ -41,7 +40,6 @@ body {
 /* Barra lateral */
 .sidebar {
   width: 200px;
-  border-radius: 12px;
   background-color: #2c3e50;
   text-align: center;
   padding: 20px;
@@ -63,22 +61,6 @@ body {
   margin: 15px 0;
   cursor: pointer;
 }
-
-/* barra del final */
-
-.barra-final {
-  background-color: #2c3e50;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  font-size: 14px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  width: 100%;
-  /* quitar margin-top: 40px; */
-}
-
-
 
 
 /* ESTILO NUEVO PARA LOS LINKS EN LA SIDEBAR */
@@ -118,22 +100,90 @@ body {
   text-align: center;
 }
 
-/* Categorías */
+/* CATEGORIAS DE LOS BOTONES  */
 .categorias {
   margin-bottom: 20px;
   text-align: center;
 }
 
 .categorias button {
-  margin-right: 10px;
-  padding: 6px 12px;
-  color: rgb(255, 255, 255);
+  margin-right: 10px; /* Agrega espacio a la derecha de cada botón */
+  margin-bottom: 15px; /* Agrega espacio debajo de cada botón */
+  padding: 4rem 7rem; /* Aumenta el espacio interno */
+  font-size: 2rem; /* Aumenta el tamaño del texto */
   border-radius: 10px;
-  border-color: #0baca6;
+  border-color: #060606;
   background-color: #2c3e50;
 }
 
+/* fondos de los botones de las categorias y color de las letras */
+
+.btn-todos {
+  background-image: url("img/fondoTodo.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  text-shadow: 4px 4px 6px;
+}
+
+.btn-desayuno {
+  background-image: url("img/fondoDesayuno.jpg");
+  background-size: cover;
+  background-position: center;
+  color: rgb(255, 255, 255);
+  text-shadow: 4px 4px 6px;
+}
+
+.btn-almuerzo {
+  background-image: url("img/fondoAlmuerzo.jpg");
+  background-size: cover;
+  background-position: center;
+  color: rgb(0, 0, 0);
+  text-shadow: 4px 4px 6px;
+}
+
+.btn-cena {
+  background-image: url("img/fondoCena.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  text-shadow: 4px 4px 6px;
+}
+
+.btn-vegetariano {
+  background-image: url("img/fondoVegetariano.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  text-shadow: 4px 4px 6px;
+}
+
+.btn-postre {
+  background-image: url("img/fondoPostre.jpg");
+  background-size: cover;
+  background-position: center;
+  color: black;
+  text-shadow: 4px 4px 6px;
+}
+
+.btn-merienda {
+  background-image: url("img/fondoMerienda.jpg");
+  background-size: cover;
+  background-position: center;
+  color: rgb(0, 0, 0);
+  text-shadow: 4px 4px 6px;
+}
+
+.btn-tragos {
+  background-image: url("img/fondoTragos.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  text-shadow: 4px 4px 6px;
+}
+
 /* Tarjetas de recetas */
+
 .Receta {
   display: flex;
   flex-wrap: wrap;
@@ -170,6 +220,7 @@ body {
 }
 
 /* Panel lateral derecho (si querés agregar más detalles) */
+
 .detail {
   width: 250px;
   background: #ffffff;
@@ -184,6 +235,22 @@ body {
 .detail li {
   margin: 10px 0;
 }
+
+
+/* barra del final */
+
+.barra-final {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  width: 100%;
+  /* quitar margin-top: 40px; */
+}
+
+
+
 
 /*---------------------------------------------------------------------------------*/
 
