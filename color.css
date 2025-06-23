@@ -32,7 +32,7 @@ body {
 }
 
 /* Layout principal */
-.container {  
+.container {
   display: flex;
   min-height: calc(100vh - 200px - 60px);
 }
@@ -307,8 +307,11 @@ body {
 
   .sidebar {
     width: 100%;
-    border-radius: 0;
+    height: auto; /* <-- Cambiá esto */
+    position: static; /* <-- Agregá esto para que no sea sticky en móvil */
     margin-bottom: 20px;
+    border-radius: 0;
+    overflow-y: visible; /* <-- Así no aparece scroll innecesario */
   }
 
   .main-content {
@@ -321,8 +324,11 @@ body {
   }
 
   .search {
-    width: 100%;
-    margin-bottom: 10px;
+    width: 80%;
+    margin: 0 auto 10px auto;
+    display: block;
+    border-radius: 10px;
+    text-align: center;
   }
 
   .categorias {
