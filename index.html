@@ -11,32 +11,26 @@
 
 <body>
 
-
+    <!-- ANCLA INICIO -->
+    <span id="inicio"></span>
     <div class="banner">
-
         <h1>Sabores de la Cocina Nacional</h1>
         <h2>“Tradición y sabor en cada plato”</h2>
-
     </div>
-
 
     <div class="container">
 
         <aside class="sidebar">
             <h2 class="logo"> Opciones</h2>
-
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Recetas</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li><a href="#">Nacionales</a></li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#recetas">Recetas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#nacionales">Nacionales</a></li>
             </ul>
-
         </aside>
 
-
         <!-- CONTENIDO PRINCIPAL -->
-
         <main class="main-content">
 
             <header class="header">
@@ -44,24 +38,24 @@
                 <button class="btn-cargar-usuario">👤 Iniciar Sesion/Registrar</button>
             </header>
 
-
             <!-- CATEGORÍAS DEL MENU DE LOS BOTONES -->
             <div class="categorias">
-                <button class="btn-todos" onclick="filtrarCategorias('todos'); document.getElementById('recetas').scrollIntoView({behavior: 'smooth'});">TODOS</button>
-                <button class="btn-desayuno" onclick="filtrarCategorias('desayuno'); document.getElementById('recetas').scrollIntoView({behavior: 'smooth'});">DESAYUNO</button>
-                <button class="btn-almuerzo" onclick="filtrarCategorias('almuerzo'); document.getElementById('recetas').scrollIntoView({behavior: 'smooth'});">ALMUERZO</button>
-                <button class="btn-cena" onclick="filtrarCategorias('cena'); document.getElementById('recetas').scrollIntoView({behavior: 'smooth'});">CENA</button>
-                <button class="btn-vegetariano" onclick="filtrarCategorias('vegetariano'); document.getElementById('recetas').scrollIntoView({behavior: 'smooth'});">VEGETARIANO</button>
-                <button class="btn-postre" onclick="filtrarCategorias('postre'); document.getElementById('recetas').scrollIntoView({behavior: 'smooth'});">POSTRE</button>
-                <button class="btn-merienda" onclick="filtrarCategorias('merienda'); document.getElementById('recetas').scrollIntoView({behavior: 'smooth'});">MERIENDA</button>
-                <button class="btn-tragos" onclick="filtrarCategorias('tragos'); document.getElementById('recetas').scrollIntoView({behavior: 'smooth'});">TRAGOS</button>
+                <a class="btn-todos" href="#todos">TODOS</a>
+                <a class="btn-desayuno" href="#desayuno">DESAYUNO</a>
+                <a class="btn-almuerzo" href="#almuerzo">ALMUERZO</a>
+                <a class="btn-cena" href="#cena">CENA</a>
+                <a class="btn-vegetariano" href="#vegetariano">VEGETARIANO</a>
+                <a class="btn-postre" href="#postre">POSTRE</a>
+                <a class="btn-merienda" href="#merienda">MERIENDA</a>
+                <a class="btn-tragos" href="#tragos">TRAGOS</a>
             </div>
 
+            <!-- ANCLA RECETAS -->
+            <span id="recetas"></span>
+            <div class="Receta" id="recetas">
 
-            <!-- TARJETAS DE RECETAS -->
-
-            <div class="Receta" id = "recetas">
-
+                <!-- ANCLA DESAYUNO -->
+                <span id="desayuno"></span>
                 <!-- DESAYUNO -->
                 <div class="card" data-categoria="desayuno">
                     <img src="img/budin-banana.jpg" alt="Budín de banana" />
@@ -77,8 +71,6 @@
                         <li>Esencia de vainilla</li>
                     </ol>
                 </div>
-
-
                 <div class="card" data-categoria="desayuno">
                     <img src="img/panqueques.jpg" alt="Panqueques" />
                     <h3>Panqueques Dulces</h3>
@@ -93,7 +85,6 @@
                         <li>Dulce de leche o fruta para rellenar</li>
                     </ol>
                 </div>
-
                 <div class="card" data-categoria="desayuno">
                     <img src="img/Omelette-Caprese.jpg" alt="Omelette caprese" />
                     <h3>Omelette Caprese</h3>
@@ -108,6 +99,8 @@
                     </ol>
                 </div>
 
+                <!-- ANCLA ALMUERZO -->
+                <span id="almuerzo"></span>
                 <!-- ALMUERZO -->
                 <div class="card" data-categoria="almuerzo">
                     <img src="img/ensalada.png" alt="ensalada" />
@@ -120,7 +113,6 @@
                         <li>Tomate</li>
                     </ol>
                 </div>
-
                 <div class="card" data-categoria="almuerzo">
                     <img src="img/tacos.png" alt="Tacos" />
                     <h3>Tacos Mexicano</h3>
@@ -132,7 +124,6 @@
                         <li>Tomate</li>
                     </ol>
                 </div>
-
                 <div class="card" data-categoria="almuerzo">
                     <img src="img/salsa boloniesa.jpg" alt="Tallarines con salsa boloñesa" width="300">
                     <h2>Tallarines con Salsa Boloñesa</h2>
@@ -148,7 +139,6 @@
                         <li>Sal, pimienta y orégano a gusto</li>
                     </ol>
                 </div>
-
                 <div class="card" data-categoria="almuerzo">
                     <img src="img/arrozChauda.jpg" alt="Arroz Chaufa" />
                     <h3>Arroz Chaufa</h3>
@@ -163,7 +153,6 @@
                         <li>Aceite</li>
                     </ol>
                 </div>
-
                 <div class="card" data-categoria="almuerzo">
                     <img src="img/empanadas.jpg" alt="Empanadas de carne" width="300">
                     <h2>Empanadas de Carne Caseras</h2>
@@ -180,7 +169,6 @@
                         <li>Aceite para cocinar</li>
                     </ol>
                 </div>
-
                 <div class="card" data-categoria="almuerzo">
                     <img src="img/ñoquis.jpg" alt="Ñoquis con salsa rosa" />
                     <h3>Ñoquis con Salsa Rosa</h3>
@@ -194,7 +182,6 @@
                         <li>Sal y pimienta</li>
                     </ol>
                 </div>
-
                 <div class="card" data-categoria="almuerzo">
                     <img src="img/pizza-casera.jpg" alt="Pizza casera" />
                     <h3>Pizza Casera</h3>
@@ -206,9 +193,8 @@
                         <li>Queso mozzarella</li>
                         <li>Jamón o aceitunas (opcional)</li>
                         <li>Orégano</li>
-                    </ol>
+                    </ol> 
                 </div>
-
                 <div class="card" data-categoria="almuerzo">
                     <img src="img/hamburguesa-casera.jpg" alt="Hamburguesa casera" />
                     <h3>Hamburguesa Casera</h3>
@@ -224,6 +210,8 @@
                     </ol>
                 </div>
 
+                <!-- ANCLA CENA -->
+                <span id="cena"></span>
                 <!-- CENA -->
                 <div class="card" data-categoria="cena">
                     <img src="img/sopa-de-verduras.jpg" alt="Sopa de verduras" />
@@ -238,7 +226,6 @@
                         <li>Caldo de verduras</li>
                     </ol>
                 </div>
-
                 <div class="card" data-categoria="cena">
                     <img src="img/pollo-curry.jpg" alt="Pollo al curry" />
                     <h3>Pollo al Curry con Arroz</h3>
@@ -252,7 +239,6 @@
                         <li>Arroz blanco cocido</li>
                     </ol>
                 </div>
-
                 <div class="card" data-categoria="cena">
                     <img src="img/guiso-lenteja.jpg" alt="Guiso de lentejas" />
                     <h3>Guiso de Lentejas</h3>
@@ -268,7 +254,6 @@
                         <li>Sal y especias a gusto</li>
                     </ol>
                 </div>
-
                 <div class="card" data-categoria="cena">
                     <img src="img/lasagna.jpg" alt="Lasaña" />
                     <h3>Lasaña de Carne</h3>
@@ -283,7 +268,6 @@
                         <li>Queso rallado</li>
                     </ol>
                 </div>
-
                 <div class="card" data-categoria="cena">
                     <img src="img/tortilla de papa.jpg" alt="Tortilla de papas" width="300">
                     <h2>Tortilla de Papas Clásica</h2>
@@ -296,7 +280,6 @@
                         <li>Sal a gusto</li>
                     </ol>
                 </div>
-
                 <div class="card" data-categoria="cena">
                     <img src="img/wrap-vegetales.jpg" alt="Wraps de vegetales" />
                     <h3>Wraps de Vegetales</h3>
@@ -310,7 +293,6 @@
                         <li>Queso crema</li>
                     </ol>
                 </div>
-
                 <div class="card" data-categoria="cena">
                     <img src="img/Napolitana.jpg" alt="Napolitana">
                     <h3>Milanesa Napolitana</h3>
@@ -332,7 +314,89 @@
                     </ol>
                 </div>
 
+                <!-- ANCLA VEGETARIANO -->
+                <span id="vegetariano"></span>
+                <!-- VEGETARIANO -->
+                <div class="card" data-categoria="vegetariano">
+                    <img src="img/vegetariano1.jpg" alt="Vegetariano 1" />
+                    <h3>Ensalada Vegetariana</h3>
+                    <p>Listo en 15 minutos</p>
+                    <h4>Ingredientes:</h4>
+                    <ol>
+                        <li>Lechuga</li>
+                        <li>Tomate</li>
+                        <li>Zanahoria</li>
+                        <li>Palta</li>
+                        <li>Semillas</li>
+                    </ol>
+                </div>
+                <!-- ...agregá más recetas vegetarianas si querés... -->
+
+                <!-- ANCLA POSTRE -->
+                <span id="postre"></span>
+                <!-- POSTRE -->
+                <div class="card" data-categoria="postre">
+                    <img src="img/postre1.jpg" alt="Postre 1" />
+                    <h3>Flan Casero</h3>
+                    <p>Listo en 60 minutos</p>
+                    <h4>Ingredientes:</h4>
+                    <ol>
+                        <li>Leche</li>
+                        <li>Huevos</li>
+                        <li>Azúcar</li>
+                        <li>Esencia de vainilla</li>
+                    </ol>
+                </div>
+                <!-- ...agregá más postres si querés... -->
+
+                <!-- ANCLA MERIENDA -->
+                <span id="merienda"></span>
+                <!-- MERIENDA -->
+                <div class="card" data-categoria="merienda">
+                    <img src="img/merienda1.jpg" alt="Merienda 1" />
+                    <h3>Tostadas con Mermelada</h3>
+                    <p>Listo en 5 minutos</p>
+                    <h4>Ingredientes:</h4>
+                    <ol>
+                        <li>Pan</li>
+                        <li>Manteca</li>
+                        <li>Mermelada</li>
+                    </ol>
+                </div>
+                <!-- ...agregá más meriendas si querés... -->
+
+                <!-- ANCLA TRAGOS -->
+                <span id="tragos"></span>
+                <!-- TRAGOS -->
+                <div class="card" data-categoria="tragos">
+                    <img src="img/tragos1.jpg" alt="Trago 1" />
+                    <h3>Fernet con Coca</h3>
+                    <p>Listo en 2 minutos</p>
+                    <h4>Ingredientes:</h4>
+                    <ol>
+                        <li>Fernet</li>
+                        <li>Coca Cola</li>
+                        <li>Hielo</li>
+                    </ol>
+                </div>
+                <!-- ...agregá más tragos si querés... -->
+
             </div>
+
+            <!-- ANCLA CONTACTO -->
+            <span id="contacto"></span>
+            <section class="contacto">
+                <h2>Contacto</h2>
+                <p>Mail: sabores@cocina.com</p>
+                <p>Teléfono: 1234-5678</p>
+            </section>
+
+            <!-- ANCLA NACIONALES -->
+            <span id="nacionales"></span>
+            <section class="nacionales">
+                <h2>Nacionales</h2>
+                <p>Aquí podés poner información sobre platos nacionales, historia, etc.</p>
+            </section>
 
         </main>
     </div>
@@ -341,7 +405,5 @@
         <p>© 2025 Sabores de la Cocina Nacional | Todos los derechos reservados</p>
     </footer>
 
-
 </body>
-
 </html>
