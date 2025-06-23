@@ -41,27 +41,26 @@
 
             <header class="header">
                 <input type="text" placeholder="BUSCAR" class="search" id="buscador">
-                <button class="btn-cargar-usuario">👤CARGAR USUARIO</button>
+                <button class="btn-cargar-usuario">👤 Iniciar Sesion/Registrar</button>
             </header>
 
 
             <!-- CATEGORÍAS DEL MENU DE LOS BOTONES -->
             <div class="categorias">
-                <button class="btn-todos" onclick="filtrarCategorias('todos')">TODOS</button>
-                <button class="btn-desayuno" onclick="filtrarCategorias('desayuno')">DESAYUNO</button>
-                <button class="btn-almuerzo" onclick="filtrarCategorias('almuerzo')">ALMUERZO</button>
-                <button class="btn-cena" onclick="filtrarCategorias('cena')">CENA</button>
-                <button class="btn-vegetariano" onclick="filtrarCategorias('vegetariano')">VEGETARIANO</button>
-                <button class="btn-postre" onclick="filtrarCategorias('postre')">POSTRE</button>
-                <button class="btn-merienda" onclick="filtrarCategorias('merienda')">MERIENDA</button>
-                <button class="btn-tragos" onclick="filtrarCategorias('tragos')">TRAGOS</button>
-
+                <button class="btn-todos" onclick="filtrarCategorias('todos'); document.getElementById('recetas').scrollIntoView({behavior: 'smooth'});">TODOS</button>
+                <button class="btn-desayuno" onclick="filtrarCategorias('desayuno'); document.getElementById('recetas').scrollIntoView({behavior: 'smooth'});">DESAYUNO</button>
+                <button class="btn-almuerzo" onclick="filtrarCategorias('almuerzo'); document.getElementById('recetas').scrollIntoView({behavior: 'smooth'});">ALMUERZO</button>
+                <button class="btn-cena" onclick="filtrarCategorias('cena'); document.getElementById('recetas').scrollIntoView({behavior: 'smooth'});">CENA</button>
+                <button class="btn-vegetariano" onclick="filtrarCategorias('vegetariano'); document.getElementById('recetas').scrollIntoView({behavior: 'smooth'});">VEGETARIANO</button>
+                <button class="btn-postre" onclick="filtrarCategorias('postre'); document.getElementById('recetas').scrollIntoView({behavior: 'smooth'});">POSTRE</button>
+                <button class="btn-merienda" onclick="filtrarCategorias('merienda'); document.getElementById('recetas').scrollIntoView({behavior: 'smooth'});">MERIENDA</button>
+                <button class="btn-tragos" onclick="filtrarCategorias('tragos'); document.getElementById('recetas').scrollIntoView({behavior: 'smooth'});">TRAGOS</button>
             </div>
 
 
             <!-- TARJETAS DE RECETAS -->
 
-            <div class="Receta">
+            <div class="Receta" id = "recetas">
 
                 <!-- DESAYUNO -->
                 <div class="card" data-categoria="desayuno">
