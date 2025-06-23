@@ -305,13 +305,15 @@ body {
     height: auto;
   }
 
-  .sidebar {
+   .sidebar {
+    position: static;
+    top: auto;
+    height: auto;
     width: 100%;
-    height: auto; /* <-- Cambiá esto */
-    position: static; /* <-- Agregá esto para que no sea sticky en móvil */
+    overflow-y: visible;
+    z-index: 10;
     margin-bottom: 20px;
     border-radius: 0;
-    overflow-y: visible; /* <-- Así no aparece scroll innecesario */
   }
 
   .main-content {
@@ -350,5 +352,21 @@ body {
     margin-left: 0;
     margin-bottom: 10px;
     box-sizing: border-box;
+  }
+
+  .sidebar ul {
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .sidebar ul li {
+    margin: 10px 0;
+  }
+
+  .sidebar ul li a {
+    font-size: 20px;
+    padding: 10px 0;
+    display: block;
   }
 }
