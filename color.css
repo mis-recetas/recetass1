@@ -62,7 +62,6 @@ body {
   cursor: pointer;
 }
 
-
 /* ESTILO NUEVO PARA LOS LINKS EN LA SIDEBAR */
 .sidebar ul li a {
   text-decoration: none; /* Quita subrayado */
@@ -87,17 +86,27 @@ body {
 
 .header {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: space-between; /* Deja el input a la izquierda y el botón a la derecha */
   margin-bottom: 20px;
   width: 100%;
-  justify-content: center;
 }
 
 .search {
-  width: 50%;
+  width: 60%; /* Más ancho para que se vea centrado visualmente */
   padding: 10px;
   border-radius: 10px;
   text-align: center;
+  margin-left: 20%; /* Mueve la barra de búsqueda a la derecha */
+  /* margin-right: 40px;  Si quieres moverla a la izquierda */
+  display: block;
+}
+
+.btn-cargar-usuario {
+  margin-left: 20px; /* Espacio entre el input y el botón */
+  border-radius: 20px;
+  padding: 10px 10px; /* Más espacio interno */
+  font-weight: bold;  /* (opcional) Texto en negrita */
 }
 
 /* CATEGORIAS DE LOS BOTONES  */
@@ -236,7 +245,6 @@ body {
   margin: 10px 0;
 }
 
-
 /* barra del final */
 
 .barra-final {
@@ -248,9 +256,6 @@ body {
   width: 100%;
   /* quitar margin-top: 40px; */
 }
-
-
-
 
 /*---------------------------------------------------------------------------------*/
 
