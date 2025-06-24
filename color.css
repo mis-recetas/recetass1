@@ -8,6 +8,75 @@ body {
   font-family: Arial, sans-serif;
 }
 
+/* ESTO ES DE INICIAR SESION AL PRECIONAR*/
+
+.login-body {
+  background-image: url("img/fondodeIniciarSesion.jpg"); /* Asegurate que este es tu fondo */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  align-items: center; /* centra verticalmente */
+  justify-content: center;
+  width: 100%;
+}
+
+.login-container {
+  background: rgba(110, 99, 99, 0.85);
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(44, 62, 80, 0.15);
+  padding: 30px 30px 20px 30px;
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.login-container h2 {
+  margin-bottom: 20px; /* Espacio debajo del título */
+  color: #f1f1f1; /* Color del texto del título */
+}
+
+.login-container label {
+  display: block; /* Hace que cada label ocupe toda la línea */
+  margin: 12px 0 4px 0; /* Espacio arriba y abajo del label */
+  color: #eeeeee; /* Color del texto del label */
+  font-weight: bold; /* Texto en negrita */
+  text-align: left; /* Alinea el texto del label a la izquierda */
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  width: 100%; /* El input ocupa todo el ancho disponible */
+  padding: 10px; /* Espacio interno en el input */
+  border-radius: 8px; /* Bordes redondeados en el input */
+  border: 1px solid #000000; /* Borde gris claro */
+  margin-bottom: 15px; /* Espacio debajo de cada input */
+  font-size: 16px; /* Tamaño de letra */
+  box-sizing: border-box; /* Incluye el padding y borde en el ancho */
+}
+
+.login-container input[type="submit"] {
+  width: 100%; /* El botón ocupa todo el ancho */
+  background: #3a3e41; /* Color de fondo azul */
+  color: #fff; /* Texto blanco */
+  border: none; /* Sin borde */
+  border-radius: 8px; /* Bordes redondeados */
+  padding: 12px; /* Espacio interno */
+  font-size: 16px; /* Tamaño de letra */
+  font-weight: bold; /* Texto en negrita */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+  transition: background 0.2s; /* Transición suave al cambiar el fondo */
+}
+
+.login-container input[type="submit"]:hover {
+  background: #2c3e50; /* Cambia el fondo al pasar el mouse */
+}
+
+/*---------------------------------------------------------------------------------------*/
+
 /* barra del titulo  */
 .banner {
   position: relative;
@@ -305,7 +374,7 @@ body {
     height: auto;
   }
 
-   .sidebar {
+  .sidebar {
     position: static;
     top: auto;
     height: auto;
@@ -368,5 +437,28 @@ body {
     font-size: 20px;
     padding: 10px 0;
     display: block;
+  }
+
+  .login-body {
+    background-image: url("img/fondo5.png"); /* o el fondo que uses */
+    background-size: cover; /* que cubra todo */
+    background-position: center; /* centrado */
+    background-repeat: no-repeat;
+  }
+
+  .login-container {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+  }
+
+  .login-container h2 {
+    font-size: 24px;
+  }
+
+  .login-container input[type="text"],
+  .login-container input[type="password"],
+  .login-container input[type="submit"] {
+    font-size: 16px;
   }
 }
