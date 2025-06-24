@@ -468,11 +468,12 @@ body {
   }
 
   .login-container {
-    width: 100%;
-    max-width: 99px;
-    margin: 60px auto o auto;
-    padding: 60px 10px;
+    width: 99%;
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 40px 20px;
     border-radius: 28px;
+    background-color: rgba(0, 0, 0, 0.6); /* opcional: para que resalte más */
   }
 
   .login-container h2 {
