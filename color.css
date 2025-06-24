@@ -456,10 +456,10 @@ body {
   /* esta parte de login */
 
   .login-body {
-    min-height: 100vh;
+    min-height: 100px;
     padding: 0;
     display: flex;
-    align-items: flex-start; /* Para que no quede tan centrado en pantallas muy chicas */
+    align-items: flex-start;
     justify-content: center;
     background-image: url("img/fondodeIniciarSesion.jpg");
     background-size: cover;
@@ -469,26 +469,32 @@ body {
 
   .login-container {
     width: 100%;
-    max-width: 95vw;
-    margin: 30px auto 0 auto;
-    padding: 32px 16px;
-    border-radius: 16px;
+    max-width: 99px;
+    margin: 60px auto o auto;
+    padding: 60px 10px;
+    border-radius: 28px;
   }
 
   .login-container h2 {
-    margin-bottom: 30px;
+    margin-bottom: 48px;
     color: #f1f1f1;
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   .login-container label {
-    font-size: 1.3rem;
+    font-size: 5.3rem;
   }
 
   .login-container input[type="text"],
   .login-container input[type="password"],
   .login-container input[type="submit"] {
     font-size: 1.3rem;
-    padding: 12px;
+    padding: 18px;
+  }
+
+  .login-container a {
+    font-size: 1.2rem;
+    margin-top: 36px;
+    display: inline-block;
   }
 }
