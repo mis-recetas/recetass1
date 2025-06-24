@@ -34,6 +34,12 @@ body {
   width: 100%;
 }
 
+.login-body a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
 .login-container h2 {
   margin-bottom: 20px; /* Espacio debajo del título */
   color: #f1f1f1; /* Color del texto del título */
@@ -76,6 +82,10 @@ body {
 }
 
 /*---------------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------------------*/
+
+/* esto es la parte del inicio */
 
 /* barra del titulo  */
 .banner {
@@ -183,6 +193,7 @@ body {
   font-weight: bold; /* (opcional) Texto en negrita */
   background-color: #44678b; /* Color de fondo del boton */
   color: white;
+  text-decoration: none;
 }
 
 /* CATEGORIAS DE LOS BOTONES  */
@@ -421,6 +432,7 @@ body {
     margin-left: 0;
     margin-bottom: 10px;
     box-sizing: border-box;
+    text-align: center;
   }
 
   .sidebar ul {
@@ -439,26 +451,44 @@ body {
     display: block;
   }
 
+  /* ------------------------------------------------------------------------- */
+
+  /* esta parte de login */
+
   .login-body {
-    background-image: url("img/fondo5.png"); /* o el fondo que uses */
-    background-size: cover; /* que cubra todo */
-    background-position: center; /* centrado */
+    min-height: 100vh;
+    padding: 0;
+    display: flex;
+    align-items: flex-start; /* Para que no quede tan centrado en pantallas muy chicas */
+    justify-content: center;
+    background-image: url("img/fondodeIniciarSesion.jpg");
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
   }
 
   .login-container {
-    width: 90%;
-    margin: 20px auto;
-    padding: 20px;
+    width: 100%;
+    max-width: 95vw;
+    margin: 30px auto 0 auto;
+    padding: 32px 16px;
+    border-radius: 16px;
   }
 
   .login-container h2 {
-    font-size: 24px;
+    margin-bottom: 30px;
+    color: #f1f1f1;
+    font-size: 2rem;
+  }
+
+  .login-container label {
+    font-size: 1.3rem;
   }
 
   .login-container input[type="text"],
   .login-container input[type="password"],
   .login-container input[type="submit"] {
-    font-size: 16px;
+    font-size: 1.3rem;
+    padding: 12px;
   }
 }
